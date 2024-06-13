@@ -11,8 +11,8 @@ app = Flask(__name__)
 openai.api_type = "azure"
 openai.api_version = "2024-02-01"
 
-os.environ["AZURE_OPENAI_ENDPOINT"] = "https://edgasancdemo.openai.azure.com/"
-os.environ["AZURE_OPENAI_API_KEY"] = "57a41271b75040089f77ac694022a12d"
+os.environ["AZURE_OPENAI_ENDPOINT"] = "AZURE_OPENAI_ENDPOINT"
+os.environ["AZURE_OPENAI_API_KEY"] = "AZURE_OPENAI_API_KEY"
 
 # Configuración y carga inicial
 embeddings = AzureOpenAIEmbeddings(
